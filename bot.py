@@ -5,8 +5,8 @@ import threading
 from flask import Flask
 from waitress import serve
 
-BOT_TOKEN = os.environ.get("7625056610:AAH8dEqIzAHvnQPsBFiE5zKcPYAUOjHueuw")
-CHANNELS = os.environ.get("@TamilMovieClub73", "@AnimeBorns").split(",")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+CHANNELS = os.environ.get("CHANNELS", "").split(",")
 
 files_db = {}
 
